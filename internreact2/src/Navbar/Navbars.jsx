@@ -2,7 +2,8 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import image from '../assets/logo.jpg'
+// import image from '../assets/logo.jpg'
+import {Outlet} from 'react-router-dom'
 
 
 
@@ -11,7 +12,7 @@ const Navbars = () => {
 <header>
 <Navbar  expand="lg" bg='dark' variant='dark' collapseOnSelect>
         <Container fluid>
-          <Navbar.Brand href="#home"><span color='background:red'> BEACH</span>  </Navbar.Brand>
+          <Navbar.Brand href="#home"><span color='background:red'> BEACH</span> </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
             <Nav className="me-auto">
@@ -26,6 +27,7 @@ const Navbars = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <Outlet/>
 
 </header>
 
